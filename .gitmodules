@@ -19,3 +19,6 @@
 [submodule "third-party/vercel-agent-skills"]
 	path = third-party/vercel-agent-skills
 	url = https://github.com/vercel-labs/agent-skills.git
+[submodule "third-party/tech-leads-club-agent-skills"]
+	path = third-party/tech-leads-club-agent-skills
+	url = https://github.com/tech-leads-club/agent-skills.git

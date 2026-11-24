@@ -22,7 +22,10 @@ Third-party source repositories are Git submodules under `third-party/`. They ar
 | `grill-me` | [mattpocock/skills](https://github.com/mattpocock/skills) | `skills/productivity/grill-me/` |
 | `growth-log` | [affaan-m/ECC](https://github.com/affaan-m/ECC) | `skills/growth-log/` |
 | `study` | [flc1125/skills](https://github.com/flc1125/skills) | `skills/study/` |
+| `devils-advocate` | [tech-leads-club/agent-skills](https://github.com/tech-leads-club/agent-skills) | Local copy: `devils-advocate/`; upstream: `packages/skills-catalog/skills/(decision-making)/the-fool/` |
 | `web-design-guidelines` | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | `skills/web-design-guidelines/` |
+
+The `devils-advocate` skill is adapted from Tech Leads Club's `the-fool` skill and licensed under CC-BY-4.0. Retain upstream attribution when redistributing or adapting it. The upstream repository remains available as a submodule for reference and updates.
 
 ## Clone and update
 
@@ -48,4 +51,12 @@ Review and commit the changed submodule pointers. The local skill snapshots do n
 
 ## Use with Codex
 
-Codex can discover a skill when its directory is placed in a recognized skill location, such as `~/.agents/skills/` for user-wide skills or `<project>/.agents/skills/` for project-specific skills. For occasional use, invoke Codex from this repository and name the skill or point it at that skill's `SKILL.md`. See [OpenAI's skill documentation](https://developers.openai.com/plugins/concepts/skills) for current behavior.
+Run the installer from this checkout to link the local skills and third-party skills into `~/.agents/skills/`:
+
+```bash
+./setup.sh
+```
+
+The script checks that all skill sources are present, including initialized submodules. It creates symlinks, so changes in this checkout are immediately reflected in the installed skills. If a destination skill with the same name already exists, the script moves that entry into a timestamped `~/.agents/skills.BACKUP-*` directory before linking the repo copy. It does not delete existing files.
+
+Codex can also discover project-specific skills under `<project>/.agents/skills/`. See [OpenAI's skill documentation](https://developers.openai.com/plugins/concepts/skills) for current behavior.
