@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workout Tracker"
+  short_description: "Process workout logs and maintain Obsidian history"
+  default_prompt: "Use $workout-tracker to process this workout table or plan using the vault contracts, propose canonical note and index changes for approval, and validate the completed update."

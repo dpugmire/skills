@@ -1,0 +1,21 @@
+[submodule "third-party/caveman"]
+	path = third-party/caveman
+	url = https://github.com/JuliusBrussee/caveman.git
+[submodule "third-party/knowledge-skills"]
+	path = third-party/knowledge-skills
+	url = https://github.com/deciqAI/knowledge-skills.git
+[submodule "third-party/vercel-skills"]
+	path = third-party/vercel-skills
+	url = https://github.com/vercel-labs/skills.git
+[submodule "third-party/mattpocock-skills"]
+	path = third-party/mattpocock-skills
+	url = https://github.com/mattpocock/skills.git
+[submodule "third-party/ecc"]
+	path = third-party/ecc
+	url = https://github.com/affaan-m/ECC.git
+[submodule "third-party/flc-skills"]
+	path = third-party/flc-skills
+	url = https://github.com/flc1125/skills.git
+[submodule "third-party/vercel-agent-skills"]
+	path = third-party/vercel-agent-skills
+	url = https://github.com/vercel-labs/agent-skills.git

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Inbox / Readwise Router"
+  short_description: "Suggest routing, labels, and links for vault Inbox items."
+  default_prompt: "Use $inbox-readwise-router to inspect Inbox and Inbox/Readwise, identify likely new content, and suggest destinations, labels, and related links without moving files unless approved."

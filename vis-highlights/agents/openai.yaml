@@ -1,0 +1,8 @@
+interface:
+  display_name: "VIS Highlights"
+  short_description: "Turn approved highlight emails into CSV records"
+  default_prompt: "Use $vis-highlights to process pending highlight emails."
+
+policy:
+  allow_implicit_invocation: true
+
